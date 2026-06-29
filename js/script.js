@@ -104,12 +104,12 @@ function gerarGrade() {
       quadrado.dataset.diferente = "false";
     }
 
-    quadrado.addEventListener("click", tratarClique);
+    quadrado.addEventListener("click", horaClick);
     grade.appendChild(quadrado);
   }
 }
 
-function tratarClique(evento) {
+function horaClick(evento) {
   var quadrado = evento.currentTarget;
 
   if (quadrado.dataset.diferente === "true") {
@@ -239,7 +239,7 @@ function mostrarRankingTodos(idDaLista) {
   var i;
   for (i = 0; i < ranking.length; i++) {
     var item = document.createElement("li");
-    item.textContent = ranking[i].nome + " — " + ranking[i].pontos + " pontos";
+    item.textContent = ranking[i].nome + " - " + ranking[i].pontos + " pontos";
     lista.appendChild(item);
   }
 }
