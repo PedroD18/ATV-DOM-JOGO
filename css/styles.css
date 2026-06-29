@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1b1033;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+h2 {
+  margin: 16px 0 8px;
+}
+
+.tela {
+  background-color: #2a1a4a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.escondida {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.aviso {
+  color: #ffd166;
+  min-height: 20px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #ff3d77;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e62e64;
+}
+
+.painel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.grade {
+  display: grid;
+  gap: 8px;
+}
+
+/* O aspect-ratio mantém eles sempre quadrados */
+.quadrado {
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.05s;
+}
+
+.quadrado:active {
+  transform: scale(0.95);
+}
+
+.ranking {
+  list-style-position: inside;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.ranking li {
+  background-color: #3a2a5a;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOGO DAS CORES</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Jogo das cores ache a cor diferente</h1>
+
+    <section id="telaPrincipal" class="tela">
+      <p>Ache o quadrado com a cor diferente antes do tempo acabar</p>
+      <input type="text" id="digitarNome" maxlength="12" placeholder="Digite seu nome">
+      <p id="aviso" class="aviso"></p>
+      <button id="botao-jogar">Jogar</button>
+
+      <h2>Ranking</h2>
+      <ol id="ranking-inicio" class="ranking"></ol>
+    </section>
+
+    <section id="tela-jogo" class="tela escondida">
+      <div class="painel">
+        <span>Tempo: <strong id="tempo">30</strong>s</span>
+        <span>Pontos: <strong id="pontuacao">0</strong></span>
+        <span>Combo: <strong id="combo">x1</strong></span>
+      </div>
+      <div id="grade" class="grade"></div>
+    </section>
+
+    <section id="tela-final" class="tela escondida">
+      <h2>Fim de jogo</h2>
+      <p>Jogador: <strong id="nome-final"></strong></p>
+      <p>Pontuação: <strong id="pontuacao-final"></strong></p>
+      <button id="botao-novamente">Jogar Novamente</button>
+      <h2>Ranking</h2>
+      <ol id="ranking-final" class="ranking"></ol>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
